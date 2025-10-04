@@ -1,0 +1,21 @@
+:root{
+  --base-font: 16px;
+  --h1: 2rem;
+  --h2: 1.5rem;
+}
+html { font-size: var(--base-font); line-height: 1.5; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#222; background:#f8f9fa; }
+
+h1 { font-size: var(--h1); margin: 0.75rem 0; }
+h2 { font-size: var(--h2); margin: 0.75rem 0; }
+p  { margin: 0.75rem 0; }
+
+/* tablet */
+@media (min-width: 768px){
+  :root{ --base-font: 17px; --h1: 2.25rem; --h2: 1.75rem; }
+}
+
+/* desktop */
+@media (min-width: 992px){
+  :root{ --base-font: 18px; --h1: 2.5rem; --h2: 2rem; }
+}

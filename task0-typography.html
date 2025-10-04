@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 0 — Responsive Typography 💕</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: linear-gradient(180deg,#ffe6f0 0%,#fff5fa 100%);
+      --text: #4a4a4a;
+      --accent: #e75480;
+      --h1-size: 2rem;
+      --h2-size: 1.5rem;
+      --p-size: 1rem;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: var(--h1-size);
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: var(--h2-size);
+      color: #ad5979;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: var(--p-size);
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      line-height: 1.6;
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(231,84,128,0.08);
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #ad5979;
+      margin-top: 2rem;
+    }
+
+    /* Tablet breakpoint */
+    @media (min-width:768px){
+      :root{
+        --h1-size:2.4rem;
+        --h2-size:1.8rem;
+        --p-size:1.05rem;
+      }
+      body{padding:3rem;}
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width:992px){
+      :root{
+        --h1-size:2.8rem;
+        --h2-size:2rem;
+        --p-size:1.1rem;
+      }
+      p{padding:1.25rem 2rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <h1>Responsive Typography 💖</h1>
+    <h2>Looks adorable on every screen size ✨</h2>
+    <p>
+      This page demonstrates responsive typography using pure CSS media queries.
+      Resize the window to see how the font sizes and spacing gracefully adjust
+      for mobile, tablet, and desktop screens.
+    </p>
+    <p>
+      Typography is one of the most important elements of good web design —
+      it defines readability, hierarchy, and overall aesthetic.  
+      Here, our pink theme adds warmth and personality while keeping everything clean.
+    </p>
+    <p class="note">🌷 Try shrinking the window — the text adapts smoothly!</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
